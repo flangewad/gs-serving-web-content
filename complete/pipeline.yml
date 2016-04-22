@@ -70,4 +70,4 @@ jobs:
         source: {repository: ubuntu}
       run:
         path: ls
-        args:
+        args: ['-al']
