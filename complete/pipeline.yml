@@ -69,7 +69,7 @@ jobs:
         type: docker-image
         source:
           repository: java
-          tag: '8'
+          tag: 'alpine'
       inputs:
       - name: source-code
       run:
