@@ -1,0 +1,73 @@
+resources:
+- name: source-code
+  type: git
+  source:
+    uri: git@github.com:flangewad/gs-serving-web-content.git
+    branch: master
+    private_key: |
+      -----BEGIN RSA PRIVATE KEY-----
+      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
+      -----END RSA PRIVATE KEY-----
+
+jobs:
+- name: some-code-alert
+  plan:
+  - get: source-code
+    trigger: true
+  - task: announce-code
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source: {repository: ubuntu}
+      run:
+        path: ls
+        args:
