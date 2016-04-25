@@ -5,4 +5,10 @@ export TERM=${TERM:-dumb} # needed for Gradle: https://issues.gradle.org/browse/
 
 pushd source-code/complete
 ./gradlew build
+cf login -a api.run.pivotal.io -u kmoulang@pivotal.io -o pivotallabs -s Beach-London
 popd
+
+
+
+
+
