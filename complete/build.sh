@@ -5,6 +5,8 @@ export TERM=${TERM:-dumb} # needed for Gradle: https://issues.gradle.org/browse/
 
 pushd source-code/complete
 ./gradlew build
+mkdir package
+cp build/libs/gs-serving-web-content-0.1.0.jar package
 popd
 
 

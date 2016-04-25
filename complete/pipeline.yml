@@ -30,9 +30,11 @@ jobs:
           tag: '8'
       inputs:
       - name: source-code
+      outputs:
+      - name: package
       run:
         path: source-code/complete/build.sh
   - put: pws
-        params:
-          manifest: source-code/complete/manifest.yml
+    params:
+      manifest: source-code/complete/manifest.yml
 
