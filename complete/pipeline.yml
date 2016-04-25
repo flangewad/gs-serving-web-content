@@ -36,5 +36,5 @@ jobs:
         path: source-code/complete/build.sh
   - put: pws
     params:
-      manifest: source-code/complete/manifest.yml
+      manifest: package/manifest.yml
 
