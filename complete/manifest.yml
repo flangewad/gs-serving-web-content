@@ -2,4 +2,4 @@
 applications:
   - name: gs-serving-web-content
     buildpack: java_buildpack
-    path: package/gs-serving-web-content-0.1.0.jar
+    path: ./gs-serving-web-content-0.1.0.jar
