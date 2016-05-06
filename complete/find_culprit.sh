@@ -6,4 +6,4 @@ export TERM=${TERM:-dumb} # needed for Gradle: https://issues.gradle.org/browse/
 pushd source-code/
 git --no-pager show -s --format='%an <%ae>' > culprit
 popd
-curl -X https://maker.ifttt.com/trigger/build_failed/with/key/EPy2lKjIbdn1KUVI69n7S
+curl -X POST https://maker.ifttt.com/trigger/build_failed/with/key/EPy2lKjIbdn1KUVI69n7S
