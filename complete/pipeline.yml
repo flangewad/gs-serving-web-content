@@ -66,11 +66,15 @@ jobs:
       aggregate:
         - task: annouce-build-failed
           config:
+            inputs:
+            - name: source-code
             platform: linux
             image:  docker:///switchback/git-debian
             run:
               path: source-code/complete/find_culprit.sh
-        - put: ifttt-rosie
+            outputs:
+                - name: culprits
+        # - put: ifttt-rosie
       # path: echo
         # args: [Build finished]
   # - put: pws

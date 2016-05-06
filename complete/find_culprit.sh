@@ -4,10 +4,6 @@ set -e -x
 export TERM=${TERM:-dumb} # needed for Gradle: https://issues.gradle.org/browse/GRADLE-2634
 
 pushd source-code/
-pwd
-ls -la
-git --no-pager show -s --format='%an <%ae>'
+git --no-pager show -s --format='%an <%ae>' > culprit
 popd
-
-cp source-code/complete/build/libs/gs-serving-web-content-0.1.0.jar package
-cp source-code/complete/manifest.yml package
+curl -X https://maker.ifttt.com/trigger/build_failed/with/key/EPy2lKjIbdn1KUVI69n7S
