@@ -4,6 +4,8 @@ set -e -x
 export TERM=${TERM:-dumb} # needed for Gradle: https://issues.gradle.org/browse/GRADLE-2634
 
 pushd source-code/
+pwd
+ls -la
 git --no-pager show -s --format='%an <%ae>'
 popd
 
